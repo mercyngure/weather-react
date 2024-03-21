@@ -1,0 +1,9 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.Weather{
+    border: 1px solid rgb(196, 191, 191);
+    max-width: 500px;
+
+}
