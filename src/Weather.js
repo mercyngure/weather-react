@@ -3,14 +3,15 @@ import './weather.css';
 
 function Weather(){
   return(
-    <div className="Weather">
+    <div className="container mt-5">
+    <div className="Weather mt-s ml-5 ">
       <form>
-        <div className="row d-flex">
+        <div className="row d-flex mt-3 ml-3">
          < div className="col-9">
         <input type="search" class="search-form"  placeholder="Enter a city"/>
         </div>
         <div className="col-3">
-       <button class="btn-btn primary">search</button>
+       <button class="btn btn-primary">search</button>
        </div>
        </div>
        </form>
@@ -22,7 +23,7 @@ function Weather(){
         </ul>
       <div className="row d-flex">
         <div className="col">
-        -2°C
+       <span className ="weather-temperature">🌧️ 2</span> <span className="weather-unit">°C </span>
           </div>
           <div className="col">
             <ul>
@@ -32,7 +33,13 @@ function Weather(){
               </div>
               </div>
       </div>
+      <footer>
+        This project was coded by < a href="#">Mercy ngure</a> and is<a href="#"> open-sourced on GitHub</a> and hosted on <a href="#">Netlify</a>
+      </footer>
+      </div>
   );
+     
+     
 
 } 
 export default Weather;

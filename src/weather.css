@@ -1,3 +1,4 @@
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -5,5 +6,39 @@
 .Weather{
     border: 1px solid rgb(196, 191, 191);
     max-width: 500px;
+    margin: 0 10px;
+    display: block;
+    align-items: center;
 
+}
+.search-form{
+    width: 350px;
+}
+.weather-temperature{
+box-sizing: border-box;
+color: rgb(33, 33, 33);
+display :inline;
+font-family :arial, sans-serif;
+font-size :64px;
+font-weight :400;
+height: auto;
+line-height :64px;
+margin-left :10px;
+text-align :left;
+text-size-adjust :100%;
+}
+.Weather-unit {
+color: #212121;   
+box-sizing: border-box;
+color :rgb(33, 33, 33);
+display :inline;
+font-family :arial, sans-serif;
+font-size :16px;
+font-weight :400;
+height: auto;
+line-height: 16px;
+position: relative;
+text-align :left;
+text-size-adjust: 100%;
+top :-34px;
 }
