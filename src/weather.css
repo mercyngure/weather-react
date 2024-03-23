@@ -5,14 +5,19 @@
 }
 .Weather{
     border: 1px solid rgb(196, 191, 191);
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 10px;
     display: block;
     align-items: center;
 
 }
+h1{
+    margin-left:10px;
+}
 .search-form{
-    width: 350px;
+    width: 450px;
+    margin-left:10px;
+    height:auto;
 }
 .weather-temperature{
 box-sizing: border-box;
@@ -27,7 +32,7 @@ margin-left :10px;
 text-align :left;
 text-size-adjust :100%;
 }
-.Weather-unit {
+.weather-unit {
 color: #212121;   
 box-sizing: border-box;
 color :rgb(33, 33, 33);
@@ -39,6 +44,8 @@ height: auto;
 line-height: 16px;
 position: relative;
 text-align :left;
-text-size-adjust: 100%;
-top :-34px;
+top: -34px;
+}
+footer{
+    font-size:16px;
 }

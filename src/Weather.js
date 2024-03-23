@@ -17,7 +17,7 @@ function Weather(){
        </form>
         
         <h1> New York</h1>
-      <ul>
+      <ul className="ml-2">
         <li>Friday 12:15</li>
         <li>Clear Sky</li>
         </ul>
@@ -34,7 +34,7 @@ function Weather(){
               </div>
       </div>
       <footer>
-        This project was coded by < a href="#">Mercy ngure</a> and is<a href="#"> open-sourced on GitHub</a> and hosted on <a href="#">Netlify</a>
+        This project was coded by < a href="https://github.com/mercyngure">Mercy ngure</a> and is<a href="https://github.com/mercyngure/weather-react"> open-sourced on GitHub</a> and hosted on <a href="htttps-mercy ngure">Netlify</a>
       </footer>
       </div>
   );
