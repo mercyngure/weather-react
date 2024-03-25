@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 import './weather.css';
 import axios from "axios";
-import { Bars} from 'react-loader-spinner';
+import {Bars } from 'react-loader-spinner';
 
 export default function Weather(props){
 const[weatherData,setWeatherData]=useState({ready:false});
 
 function handleResponse(response){
-console.log( response.data);
+  console.log( response.data);
 setWeatherData({
   ready:true,
   temperature:response.data.main.temp,
@@ -51,16 +51,15 @@ if (weatherData.ready){
               </div>
               </div>
       </div>
-      <footer>
+        <footer>
         This project was coded by < a href="https://github.com/mercyngure">Mercy ngure</a> and is<a href="https://github.com/mercyngure/weather-react"> open-sourced on GitHub</a> and hosted on <a href="https://weather-project-react-bobo.netlify.app/">Netlify</a>
       </footer>
       </div>
-  );
-  } 
-    else {const apikey="8402ccd9e55983fce71eeeaa1d2bd1fc";
-       let apiurl=`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apikey}`;       axios.get(apiurl).then(handleResponse);
-       
-       return (  <Bars
+  ) } 
+    else {const apikey="25059c638022708210dd5ffc98b770ff";
+       let apiurl=`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultcity}&appid=${apikey}`;
+       axios.get(apiurl).then(handleResponse);
+       return <Bars
         height="80"
         width="80"
         color="#4fa94d"
@@ -68,6 +67,7 @@ if (weatherData.ready){
         wrapperStyle={{}}
         wrapperClass=""
         visible={true}
-        />);
-            }
+        />;
+            
        }
+      }
