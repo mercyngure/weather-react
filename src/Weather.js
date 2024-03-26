@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import './weather.css';
+import FormattedDate from './FormattedDate';
 import axios from "axios";
 import {Bars } from 'react-loader-spinner';
+
 
 export default function Weather(props){
 const[weatherData,setWeatherData]=useState({ready:false});
@@ -14,7 +16,7 @@ setWeatherData({
   humidity:response.data.main.humidity,
   description:response.data.weather[0].description,
   wind:response.data.wind.speed,
-  date:"sunday 07:31",
+  date: new Date(response.data.dt*1000),
   city:response.data.name
 });
 }
@@ -36,7 +38,9 @@ if (weatherData.ready){
         
         <h1> {weatherData.city}</h1>
       <ul className="ml-2">
-        <li>{weatherData.date}</li>
+        <li>
+        <FormattedDate date={weatherData.date}/>
+        </li>
         <li>{weatherData.description}</li>
         </ul>
       <div className="row d-flex">
