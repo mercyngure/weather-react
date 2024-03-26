@@ -73,7 +73,7 @@ if (weatherData.ready){
           </a>{" "}
           and{" "}
           <a
-            href="https://suspicious-beaver-111c4d.netlify.com/"
+            href="https://github.com/mercyngure"
             target="_blank"
             rel="noopener noreferrer"
           >
