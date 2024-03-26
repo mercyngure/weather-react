@@ -5,6 +5,7 @@ import axios from "axios";
 import {Bars } from 'react-loader-spinner';
 
 
+
 export default function Weather(props){
 const[weatherData,setWeatherData]=useState({ready:false});
 const[city, setCity]=useState(props.defaultcity);
@@ -18,6 +19,7 @@ setWeatherData({
   description:response.data.weather[0].description,
   wind:response.data.wind.speed,
   date: new Date(response.data.dt*1000),
+  icon:response.data.weather[0].icon,
   city:response.data.name
 });
 }
