@@ -57,7 +57,7 @@ if (weatherData.ready){
        <footer>
           This project was coded by{" "}
           <a
-            href="https://www.delac.io/"
+            href="https://github.com/mercyngure"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -65,7 +65,7 @@ if (weatherData.ready){
           </a>{" "}
           and is{" "}
           <a
-            href="https://github.com/wecodeschool/react-weather-app"
+            href="https://github.com/mercyngure/weather-react"
             target="_blank"
             rel="noopener noreferrer"
           >
