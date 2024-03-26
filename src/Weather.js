@@ -48,12 +48,38 @@ if (weatherData.ready){
         <input type="search" class="search-form"  placeholder="Enter a city" onChange={handleCityChange}/>
         </div>
         <div className="col-3">
-       <button class="btn btn-primary">search</button>
+       <button class="btn btn-primary w-200">search</button>
        </div>
        </div>
        </form>
        <WeatherInfo data={weatherData}/>
        </div>
+       <footer>
+          This project was coded by{" "}
+          <a
+            href="https://www.delac.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MERCY NGURE
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/wecodeschool/react-weather-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://suspicious-beaver-111c4d.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
        </div>
        )
        }
