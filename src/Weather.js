@@ -73,7 +73,7 @@ if (weatherData.ready){
           </a>{" "}
           and{" "}
           <a
-            href="https://github.com/mercyngure"
+            href="https://weather-project-react-mercy.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
