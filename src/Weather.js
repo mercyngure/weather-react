@@ -73,7 +73,7 @@ if (weatherData.ready){
             target="_blank"
             rel="noopener noreferrer"
           >
-            open-sourced on GitHub
+            on GitHub
           </a>{" "}
           and{" "}
           <a
