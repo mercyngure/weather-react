@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './weather.css';
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import {Bars } from 'react-loader-spinner';
 
@@ -20,6 +21,7 @@ setWeatherData({
   wind:response.data.wind.speed,
   date: new Date(response.data.dt*1000),
   icon:response.data.weather[0].icon,
+  coordinates:response.data.coord,
   city:response.data.name
 });
 }
@@ -53,6 +55,8 @@ if (weatherData.ready){
        </div>
        </form>
        <WeatherInfo data={weatherData}/>
+       
+       <WeatherForecast coordinates={weatherData.coordinates}/>
        </div>
        <footer>
           This project was coded by{" "}
