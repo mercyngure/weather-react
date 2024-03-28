@@ -50,3 +50,8 @@
   line-height: 1;
   top: -10px;
 }
+@media( max-width:500px){
+  .search-form{
+    width:200px;
+  }
+}
