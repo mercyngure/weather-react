@@ -5,12 +5,11 @@
   box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
   padding: 40px;
   color: rgb(135, 135, 135);
+  max-width: 500;
+  height: 100px;
 }
 
-.Weather .logo {
-  max-width: 150px;
-  display: block;
-}
+
 
 .Weather form {
   margin-top: 40px;
@@ -28,6 +27,7 @@
   font-size: 16px;
   height: 50px;
   line-height: 20px;
+  width: 500px;
 }
 
 .Weather .btn {
@@ -37,6 +37,7 @@
   padding: 15px 0;
   border: none;
   height: 50px;
+  width:200px
 }
 
 .Weather .search-input::placeholder {
