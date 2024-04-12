@@ -44,16 +44,25 @@ if (weatherData.ready){
   return(
     <div className="container mt-5">
     <div className="Weather mt-s ml-5 ">
-      <form onSubmit={handleSubmit}>
-        <div className="row d-flex mt-3 ml-3">
-         < div className="col-9">
-        <input type="search" class="search-form"  placeholder="Enter a city" onChange={handleCityChange}/>
-        </div>
-        <div className="col-3">
-       <button class="btn btn-primary w-200">search</button>
-       </div>
-       </div>
-       </form>
+    <form onSubmit={handleSubmit}>
+    <div className="row">
+            <div className="col-9 ">
+              <input
+                type="search"
+                placeholder="Enter a city.."
+                className="form-control search-input"
+                onChange={handleCityChange}
+              />
+            </div>
+            <div className="col-3 p-0">
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-primary w-100"
+              />
+            </div>
+          </div>
+        </form>
        <WeatherInfo data={weatherData}/>
        
        <WeatherForecast coordinates={weatherData.coordinates}/>
